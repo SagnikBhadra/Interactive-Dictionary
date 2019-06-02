@@ -20,4 +20,9 @@ def defin_of_word (word):
         return "The word doesn't exist. Please double check it."
 
 defin = defin_of_word(input("Enter word: "))
-print(defin)
+
+if type(defin) == list:
+    for item in defin:
+        print(item)
+else:
+    print(defin)
