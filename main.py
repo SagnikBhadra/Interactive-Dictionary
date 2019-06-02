@@ -3,6 +3,7 @@ import json
 data = json.load(open("data.json"))
 
 def defin_of_word (word):
+    word = word.lower()
     if  word in data:
         return data[word]
     else:
