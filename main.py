@@ -1,8 +1,9 @@
 import json
 
-def defin_of_word (word, data):
+data = json.load(open("data.json"))
+
+def defin_of_word (word):
     return data[word]
 
-data = json.load(open("data.json"))
-defin = defin_of_word(input("Enter word: "), data)
+defin = defin_of_word(input("Enter word: "))
 print(defin)
